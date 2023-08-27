@@ -57,7 +57,7 @@ export default async function Projects() {
             
             <div className="p-4 sm:p-6">
               <a href={project.link} target="_blank">
-                <h3 className="text-lg font-medium text-gray-900 dark:text-white">
+                <h3 className="text-base font-medium text-gray-900 dark:text-white">
                   {project.title}
                 </h3>
               </a>
