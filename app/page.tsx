@@ -27,8 +27,7 @@ export default function Home() {
               Sassi Motaz
             </h3>
             <p className="text-gray-500 dark:text-gray-300 text-center">
-              Hey my name is Motaz and I am a Full Stack Developer
-            </p>
+              Hey my name is Motaz and I am a Full Stack Developer</p>
 
             <div className="flex space-x-5 pt-6">
               <a href="https://github.com/SassiMotaz" target="_blank">
@@ -75,7 +74,7 @@ export default function Home() {
 
           <div className="prose max-w-none prose-lg pt-8 pb-7 dark:prose-invert xl:col-span-2">
             <p>
-              Hi everyone 👋, my name is <b>Motaz Sassi</b>, I’m 25 years old
+              Hi everyone 👋, my name is <b>Motaz Sassi</b>, I’m 26 years old
               and a<b>Full Stack Developer</b> based in <b>Zaghouan, Tunisia</b>
               . I’m passionate about technology, innovation, and building
               intelligent, high-performance web solutions.
