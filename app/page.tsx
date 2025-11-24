@@ -2,6 +2,27 @@ import Image from "next/image";
 import Me from "@/public/IMG_365.png";
 
 export default function Home() {
+  const projects = [
+    {
+      title: "E-commerce Platform",
+      description:
+        "Development of a full-featured e-commerce web app using Angular, Spring Boot, Stripe API, and MongoDB.",
+      link: "https://github.com/SassiMotaz/ecommerce-app",
+    },
+    {
+      title: "AI Chatbot Assistant",
+      description:
+        "A chatbot powered by NLP and Python Flask that assists users with automated support and recommendations.",
+      link: "https://github.com/SassiMotaz/ai-chatbot",
+    },
+    {
+      title: "Business Intelligence Dashboard",
+      description:
+        "Interactive dashboard built with Power BI and ETL automation for enterprise data analytics.",
+      link: "https://github.com/SassiMotaz/bi-dashboard",
+    },
+  ];
+
   return (
     <>
       <head>
@@ -9,105 +30,103 @@ export default function Home() {
         <meta name="description" content="Sassi Motaz's personal website" />
         <link rel="icon" href="/logo.png" />
       </head>
+
       <div className="divide-y divide-gray-100 dark:divide-gray-700">
+
+        {/* Header */}
         <div className="space-y-2 pt-5 pb-8 md:space-x-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-13">
-            Home
+          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl md:text-6xl">
+            Portfolio
           </h1>
         </div>
 
+        {/* About Section */}
         <div className="items-center space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
           <div className="flex flex-col items-center pt-8">
             <Image
-              alt="Picture of jan marshal"
+              alt="Photo of Motaz Sassi"
               src={Me}
               className="h-48 w-48 rounded-full object-cover object-top"
             />
             <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
               Sassi Motaz
             </h3>
-            <p className="text-gray-500 dark:text-gray-300 text-center">
-              Hey my name is Motaz and I am a Full Stack Developer</p>
+            <p className="text-gray-600 dark:text-gray-300 text-center">
+              Full Stack Developer | Java, Python, Angular, React, Spring Boot
+            </p>
 
             <div className="flex space-x-5 pt-6">
+              {/* GitHub */}
               <a href="https://github.com/SassiMotaz" target="_blank">
                 <svg
                   viewBox="0 0 1024 1024"
                   fill="currentColor"
                   className="w-8 h-8 text-teal-500 hover:text-teal-600"
                 >
-                  <path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0138.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z" />
+                  <path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5C64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2..." />
                 </svg>
               </a>
-              <a
-                href="https://www.linkedin.com/in/sassi-mootaz-4a6622375/"
-                target="_blank"
-              >
-                <svg
-                  viewBox="0 0 1024 1024"
-                  fill="currentColor"
-                  className="w-8 h-8 text-teal-500 hover:text-teal-600"
-                >
-                  <path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1168.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7 120.2 0 142.3 79.1 142.3 181.9v209.4z" />
+
+              {/* LinkedIn */}
+              <a href="https://www.linkedin.com/in/sassi-mootaz-4a6622375/" target="_blank">
+                <svg viewBox="0 0 1024 1024" fill="currentColor" className="w-8 h-8 text-teal-500 hover:text-teal-600">
+                  <path d="M880 112H144c-17.7 0-32 14.3..." />
                 </svg>
               </a>
+
+              {/* Email */}
               <a href="mailto:sassimootaz99@gmail.com" target="_blank">
-                <svg
-                  viewBox="0 0 1024 1024"
-                  fill="currentColor"
-                  className="w-8 h-8 text-teal-500 hover:text-teal-600"
-                >
-                  <path d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-80.8 108.9L531.7 514.4c-7.8 6.1-18.7 6.1-26.5 0L189.6 268.9A7.2 7.2 0 01194 256h648.8a7.2 7.2 0 014.4 12.9z" />
-                </svg>
-              </a>
-              <a href="https://www.instagram.com/sassi.motaz/" target="_blank">
-                <svg
-                  viewBox="0 0 1024 1024"
-                  fill="currentColor"
-                  className="w-8 h-8 text-teal-500 hover:text-teal-600"
-                >
-                  <path d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3 645.3 585.4 645.3 512 585.4 378.7 512 378.7zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zM512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9 717.1 398.5 717.1 512 625.5 717.1 512 717.1zm213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9 47.9 21.4 47.9 47.9a47.84 47.84 0 01-47.9 47.9z" />
+                <svg viewBox="0 0 1024 1024" fill="currentColor" className="w-8 h-8 text-teal-500 hover:text-teal-600">
+                  <path d="M928 160H96c-17.7 0-32 14.3..." />
                 </svg>
               </a>
             </div>
           </div>
 
+          {/* About Text */}
           <div className="prose max-w-none prose-lg pt-8 pb-7 dark:prose-invert xl:col-span-2">
             <p>
-              Hi everyone 👋, my name is <b>Motaz Sassi</b>, I’m 26 years old
-              and a<b>Full Stack Developer</b> based in <b>Zaghouan, Tunisia</b>
-              . I’m passionate about technology, innovation, and building
-              intelligent, high-performance web solutions.
+              Hi everyone 👋, I'm <b>Motaz Sassi</b>, a <b>Full Stack Developer</b> based in <b>Zaghouan, Tunisia</b>. 
+              I build modern, high-performance web applications using Angular, Spring Boot, React, Python, and PHP.
             </p>
             <p>
-              I’m currently working as a{" "}
-              <b>Full Stack Developer at PASS Consulting Group</b>, where I
-              design and develop scalable web applications using
-              <b>Angular</b> and <b>Spring Boot</b>. I also have strong
-              experience with <b>Django</b>, <b>Vue.js</b>, and <b>React.js</b>{" "}
-              from my freelance projects.
+              I currently work at <b>PASS Consulting Group</b>, developing scalable solutions with <b>Angular</b> and <b>Spring Boot</b>.
+              I also have strong experience in AI-powered modules, e-commerce platforms, dashboards, and APIs.
             </p>
             <p>
-              My journey includes developing <b>e-commerce platforms</b>,
-              implementing <b>AI-based modules</b> such as recommendation
-              systems and chatbots, and creating{" "}
-              <b>Business Intelligence dashboards</b> with <b>Power BI</b> and
-              ETL processes.
+              I’m skilled in <b>Java, Python, PHP, JavaScript</b>, and specialize in full-stack development, DevOps, and intelligent systems.
+              Passionate about technology, I’m always exploring new tools and innovation-driven projects.
             </p>
             <p>
-              I’m skilled in <b>Python, Java, PHP, and JavaScript</b>, and
-              familiar with modern development and deployment tools like
-              <b>Docker</b>, <b>GitLab CI/CD</b>, <b>PostgreSQL</b>, and{" "}
-              <b>MongoDB</b>.
-            </p>
-            <p>
-              I’m always eager to learn new technologies and explore innovative
-              ideas. I’m currently open to new opportunities in{" "}{" "}
-              <b>software development</b>,<b>data engineering</b>, or{" "}
-              <b>intelligent systems</b>.
+              I’m currently open to new opportunities in software development,
+              backend engineering, and intelligent solutions.
             </p>
           </div>
         </div>
+
+        {/* Projects Section */}
+        <div className="pt-10">
+          <h2 className="text-3xl font-bold mb-6 dark:text-gray-200">💡 Mes Projets</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            {projects.map((project, index) => (
+              <div
+                key={index}
+                className="border rounded-lg p-5 shadow-md hover:shadow-lg transition"
+              >
+                <h3 className="text-xl font-semibold">{project.title}</h3>
+                <p className="text-gray-600 dark:text-gray-300 mt-2">{project.description}</p>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  className="text-teal-500 hover:underline mt-3 inline-block"
+                >
+                  Voir sur GitHub →
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+
       </div>
     </>
   );
