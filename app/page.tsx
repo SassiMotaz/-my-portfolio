@@ -102,7 +102,7 @@ export default function Home() {
             </p>
             <p>
               I’m always eager to learn new technologies and explore innovative
-              ideas. I’m currently open to new opportunities in{" "}
+              ideas. I’m currently open to new opportunities in{" "}{" "}
               <b>software development</b>,<b>data engineering</b>, or{" "}
               <b>intelligent systems</b>.
             </p>
