@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Me from "@/public/IMG_365.png";
+import Me from "@/public/074b959ac94f49aeadb9f967640ec9e2 (1).jpg";
 
 export default function Home() {
   const projects = [
