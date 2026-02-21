@@ -103,30 +103,6 @@ export default function Home() {
             </p>
           </div>
         </div>
-
-        {/* Projects Section */}
-        <div className="pt-10">
-          <h2 className="text-3xl font-bold mb-6 dark:text-gray-200">💡 Mes Projets</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {projects.map((project, index) => (
-              <div
-                key={index}
-                className="border rounded-lg p-5 shadow-md hover:shadow-lg transition"
-              >
-                <h3 className="text-xl font-semibold">{project.title}</h3>
-                <p className="text-gray-600 dark:text-gray-300 mt-2">{project.description}</p>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  className="text-teal-500 hover:underline mt-3 inline-block"
-                >
-                  Voir sur GitHub →
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-
       </div>
     </>
   );
